@@ -162,7 +162,7 @@ public class MySSLSocketFactory extends SSLSocketFactory {
         SSLSocketFactory socketFactory;
         try {
             socketFactory = new MySSLSocketFactory(getKeystore());
-            socketFactory.setHostnameVerifier(SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
+            //socketFactory.setHostnameVerifier(SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
         } catch (Throwable t) {
             t.printStackTrace();
             socketFactory = SSLSocketFactory.getSocketFactory();
